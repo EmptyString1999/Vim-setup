@@ -1,8 +1,6 @@
 # EmptyStrings NeoVim config
 This is a work in progress config but is a decent starting point.
 
-<details>
-<summary> Screenshots </summary>
 # Screenshots
 ## Dashboard
 ![Dashboard](screenshots//Dashboard.png "Dashboard")
@@ -12,7 +10,6 @@ This is a work in progress config but is a decent starting point.
 ![Code Lua](screenshots//Code_lua.png "Code Lua")
 ## Code with sidebar
 ![Code with sidebar](screenshots//Code_lua_sidebar.png "Code with sidebar")
-</details>
 
 # Plugins List
 - [CHADtree](httpas://github.com/ms-jpq/chadtree) : File explorer

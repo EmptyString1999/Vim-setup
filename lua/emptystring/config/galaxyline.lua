@@ -88,7 +88,17 @@ local mode_colors = {
 	V = colors.purple,
 	[''] = colors.purple,
 	R = colors.red,
-	c = colors.orange
+	c = colors.orange,
+}
+
+local alias = {
+	n = 'NORMAL',
+	i = 'INSERT',
+	c = 'COMMAND',
+	V = 'VISUAL',
+	[''] = 'V-BLOCK',
+	v = 'VISUAL',
+	R = 'REPLACE'
 }
 
 
@@ -102,15 +112,6 @@ gls.left[1] = {
             end
             
             local mode = vim.fn.mode()
-            local alias = {
-                n = 'NORMAL',
-                i = 'INSERT',
-                c = 'COMMAND',
-                V = 'VISUAL',
-                [''] = 'V-BLOCK',
-                v = 'VISUAL',
-                R = 'REPLACE'
-            }
             return '  ' .. (alias[mode] or mode) .. ' '
         end,
         highlight = function()
@@ -265,6 +266,7 @@ gls.right[3] = {
 -- Initialize Galaxyline (IMPORTANT!)
 gl.load_galaxyline()
 
+-- ======================================= Hide default UI elements ========================================
 -- Hide default UI elements
 vim.opt.laststatus = 3
 vim.opt.statusline = " "

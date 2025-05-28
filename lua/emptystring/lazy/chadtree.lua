@@ -1,5 +1,6 @@
 return {
 	"ms-jpq/chadtree",
+	enable = false, -- Set to true to enable CHADTree
 	branch = "chad", -- Important: Specify the correct branch
 	init = function()
 		-- Optional: Set keybindings to toggle CHADTree

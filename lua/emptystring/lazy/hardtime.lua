@@ -1,11 +1,16 @@
 return {
 	"m4xshen/hardtime.nvim",
 	lazy = false,
-	dependencies = {"MunifTanjim/nui.nvim"},
-	opts = {
-		showmode = true,
-		notification = function(message)
-			vim.notify(message, vim.log.levels.WARN)
-		end,
+	dependenciej = {
+		"MunifTanjim/nui.nvim",
+		"rcarriga/nvim-notify"
 	},
+	opts = {
+		-- ui should use notify
+		ui = {
+			notify = true,
+			notify_title = "Hardtime",
+			notify_timeout = 1000,
+		},
+	}
 }

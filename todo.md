@@ -1,0 +1,6 @@
+- [x] fix colorizer @done(06/01/25 20:17)
+- - #EE37A2
+- [ ] better terminal settup
+- - [ ] fix nerd fonts
+- - [ ] tmuxing?
+- 

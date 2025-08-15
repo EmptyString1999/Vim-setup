@@ -31,6 +31,9 @@ return {
 		local coq = require("coq")
 
 		lspconfig.lua_ls.setup(coq.lsp_ensure_capabilities({}))
+		lspconfig.qmlls.setup(coq.lsp_ensure_capabilities({
+			cmd = {"qmlss", "-E"}	
+		}))
 		lspconfig.rust_analyzer.setup(coq.lsp_ensure_capabilities({
 			settings = {
 				["rust-analyzer"] = {
